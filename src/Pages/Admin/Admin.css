@@ -1,0 +1,13 @@
+.admin-title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.admin-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
