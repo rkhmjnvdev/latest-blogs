@@ -11,3 +11,7 @@
     width: 500px;
     margin: 0 auto;
 }
+.inner{
+    display: flex;
+    flex-direction: column;
+}

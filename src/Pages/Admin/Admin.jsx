@@ -8,23 +8,20 @@ const Admin = () => {
     const [date, setDate] = useState('');
     const [description, setDescription] = useState('');
 
-    // Handle form submission
+
     const productSubmit = () => {
-        const data = { name, img, date, description }; // Use state values
+        const data = { name, img, date, description }; 
 
         axios.post('https://67433913b7464b1c2a640b61.mockapi.io/shopping-uzum/shopping', data)
             .then(res => {
                 console.log('Response:', res);
                 alert('Product submitted successfully!');
             })
-            .catch(err => {
-                console.error('Error:', err);
-                alert('Failed to submit the product.');
-            });
     };
 
     return (
         <div className="container">
+            <div className='inner'>
             <h1 className="admin-title">Admin Page</h1>
             <div className="admin-input">
                 <input 
@@ -51,6 +48,7 @@ const Admin = () => {
                     placeholder="Description" 
                 ></textarea>
                 <button onClick={productSubmit}>submit</button>
+            </div>
             </div>
         </div>
     );

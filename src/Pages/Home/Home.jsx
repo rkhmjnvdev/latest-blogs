@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import  '../Home/Home.css'
+
 
 const Home = () => {
 
@@ -12,6 +14,7 @@ const Home = () => {
     }, [])
   return (
     <div><h3>LATEST BLOGS</h3>
+    <NavLink className="admin__link" to="/admin-access">Admin</NavLink>
        <div className="container">
   <ul>
     {data.map((item, index) => {
